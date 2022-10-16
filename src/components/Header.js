@@ -12,6 +12,7 @@ import {
 import React from "react";
 import { Link } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
+import AuthModal from "./Authentication/AuthModal";
 
 const useStyles = makeStyles(() => ({
   title: {
@@ -56,6 +57,7 @@ const {currency , setCurrency} = CryptoState()
               <MenuItem value={"USD"}>USD</MenuItem>
               <MenuItem value={"INR"}>INR</MenuItem>
             </Select>
+             <AuthModal/>
           </Toolbar>
         </Container>
       </AppBar>
